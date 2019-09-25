@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	
 	<div class="container main">
 		<div class="header col-lg-10 offset-lg-1">
 			<img src="assets/img/name.jpg">
@@ -84,6 +84,15 @@
 						</button>
 					</div>
 				</div>
+				<div class="row">
+					<div class="sale col-lg-12 ">
+						<div class="sale-slider">
+							<div class="sale-block col-lg-12"><img src="assets/img/sale1.jpg" alt=""></div>
+							<div class="sale-block col-lg-12"><img src="assets/img/sale2.jpg" alt=""></div>
+							<div class="sale-block col-lg-12"><img src="assets/img/sale3.jpg" alt=""></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="footer row">
@@ -111,6 +120,18 @@
 			</table>
 		</div>
 	</div>
-	
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="assets/slick/slick.css">
+	<link rel="stylesheet" href="assets/slick/slick-theme.css">
+	<script src="assets/slick/slick.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('.sale-slider').slick({
+		  	arrows: false,
+		  	autoplay: true,
+		  	autoplaySpeed: 2000,
+		  });
+		});
+	</script>
 </body>
 </html>
