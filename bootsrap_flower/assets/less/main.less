@@ -30,14 +30,15 @@ a, a:hower {
 	text-decoration: none;
 }
 .box {
+	margin-top: 3rem;
 	text-align: center;
 	h2 {
-		font-size: 2.7rem;
+		font-size: 2.5rem;
 	}
 	img {
 		display: inline-block;
 		width: 70%;
-		margin: auto;	
+		margin: auto;
 	}
 	.button {
 		width: 70%;
@@ -46,6 +47,7 @@ a, a:hower {
 		border-color: @dark;
 		border-top-left-radius: 0px;
 		border-top-right-radius: 0px;
+
 	}
 }
 .sale {
@@ -73,16 +75,17 @@ h1 {
 .main {
 	font-family: "TT Chocolates", sans-serif;
 }
+.header {
+	img {
+		width: 100%;
+	}
+}
 .site_content {
 	background: @bg-color;
 	border-right: solid 2px @h-color;
  	border-left: solid 2px @h-color;
  	color: @text-color;
-	.header {
-		img {
-			width: 100%;
-		}
-	}
+	
 	.right_menu {
 		border-right: 2px solid @h-color;
 		ul {
@@ -128,5 +131,16 @@ h1 {
 	color: @text-color;
 	h3 {
 		color: @text-color;
+		margin: 1rem;
+	}
+	div {
+		margin-bottom: 3rem;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.box {
+		h2 {
+			font-size: 2rem;
+		}
 	}
 }
