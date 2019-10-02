@@ -88,6 +88,9 @@ h1 {
 	
 	.right_menu {
 		border-right: 2px solid @h-color;
+		.menu {
+			margin-top: 1rem;
+		}
 		ul {
 			font-size: 2rem;
 			line-height: 3.2rem;
@@ -129,9 +132,13 @@ h1 {
 	background-color: @h-color;
 	text-align: center;
 	color: @text-color;
-	h3 {
+	h2 {
 		color: @text-color;
 		margin: 1rem;
+		font-size: 3rem;
+	}
+	p {
+		font-size: 1.5rem;
 	}
 	div {
 		margin-bottom: 3rem;
@@ -142,5 +149,31 @@ h1 {
 		h2 {
 			font-size: 2rem;
 		}
+	}
+}
+@media (max-width: 991px) {
+	.menu {
+		ul {
+			li {
+				text-align: center;
+				font-size: 3.5rem;
+				margin-bottom: 1rem;
+			}
+		}
+		
+	}
+	.footer {
+		h3 {
+			font-size: 3.5rem;
+		}
+		font-size: 2.5rem;
+	}
+}
+@media (min-width: 1200px) {
+	.box {
+		h2 {
+			margin-bottom: 2rem;
+		}
+		
 	}
 }
