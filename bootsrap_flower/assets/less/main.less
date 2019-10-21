@@ -28,6 +28,7 @@ html {
 }
 a, a:hover {
 	text-decoration: none;
+	transition: all 0.3s;
 }
 .box {
 	margin-top: 3rem;
@@ -71,11 +72,6 @@ h1, h2, h3, h4, h5, h6{
 .main {
 	font-family: "TT Chocolates", sans-serif;
 }
-.header {
-	img {
-		width: 100%;
-	}
-}
 .site_content {
 	background: @bg-color;
 	border-right: solid 2px @h-color;
@@ -84,6 +80,14 @@ h1, h2, h3, h4, h5, h6{
 	padding-bottom: 2rem;
 	.right_menu {
 		border-right: 2px solid @h-color;
+		.name_icon {
+			img {
+				width: 100%;
+				border-radius: 1000px;
+				border: 3px solid @h-color;
+				margin-bottom: 2rem;
+			}
+		}
 		.menu {
 			margin-top: 1rem;
 		}
@@ -109,15 +113,26 @@ h1, h2, h3, h4, h5, h6{
 		}
 	}
 	.site {
-		h1 {
-			margin: 2rem;
-			padding-bottom: 4rem;
-			font-size: 6rem;
-			display: block;
-			text-align: center;
-			width: 100%;
+		.header {
 			border-bottom: 2px dotted @h-color;
+			padding-bottom: 4rem;
+			h1 {
+				margin: 2rem;
+				font-size: 6rem;
+				display: block;
+				text-align: center;
+				width: 100%;
+				
+			}
+			p {
+				font-size: 2rem;
+				text-align: center;
+				display: block;
+				font-family: lena, sans-serif;
+				color: @h-color;
+			}
 		}
+		
 		h2 {
 			font-size: 4rem;
 			display: block;
